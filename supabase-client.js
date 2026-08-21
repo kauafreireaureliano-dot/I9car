@@ -3,14 +3,18 @@ const SUPABASE_PUBLISHABLE_KEY='sb_publishable_yRptu_ASbjlz8A0ilZWkSg_wkxDVgES';
 const supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 
 window.addEventListener('DOMContentLoaded',()=>{
-  // Logo local em SVG: não depende mais do link temporário do Instagram.
+  // Remove a recriação da logo e deixa o hero limpo, focado na mensagem.
   const logo=document.querySelector('.hero .logo');
-  if(logo){
-    const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520"><defs><linearGradient id="s" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#fff"/><stop offset=".48" stop-color="#bfc2c7"/><stop offset="1" stop-color="#f7f7f7"/></linearGradient></defs><rect width="1200" height="520" fill="#07090d" rx="28"/><text x="75" y="340" fill="url(#s)" font-family="Arial Black,Arial,sans-serif" font-size="300" font-weight="900" letter-spacing="-28">i9</text><path d="M425 190 C555 245 640 125 790 135 C900 140 1000 160 1100 215" fill="none" stroke="#aeb2b9" stroke-width="10" stroke-linecap="round"/><path d="M675 225 C800 300 980 195 1110 250 C1145 265 1165 285 1175 315" fill="none" stroke="#ff6a19" stroke-width="11" stroke-linecap="round"/><text x="510" y="345" fill="url(#s)" font-family="Arial Black,Arial,sans-serif" font-size="185" font-weight="900" letter-spacing="-8">CAR</text><text x="520" y="425" fill="#ff6a19" font-family="Arial Black,Arial,sans-serif" font-size="58" font-weight="900" letter-spacing="6">MULTIMARCAS</text></svg>`;
-    logo.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
-    logo.style.objectFit='contain';
-    logo.style.background='transparent';
-  }
+  if(logo) logo.remove();
+
+  const eyebrow=document.querySelector('.hero .eyebrow');
+  const heroTitle=document.querySelector('.hero h1');
+  const heroText=document.querySelector('.hero p');
+  const heroButton=document.querySelector('.hero .cta .btn');
+  if(eyebrow) eyebrow.textContent='i9 CAR MULTIMARCAS • ARCOVERDE/PE';
+  if(heroTitle) heroTitle.innerHTML='ALGUMAS CONQUISTAS<br>NÃO CABEM EM PALAVRAS.<br><span class="orange">ELAS TÊM QUATRO RODAS.</span>';
+  if(heroText) heroText.textContent='Talvez a sua próxima conquista esteja esperando por você aqui.';
+  if(heroButton) heroButton.textContent='EXPLORAR VEÍCULOS ↓';
 
   const button=document.getElementById('sound');
   if(!button) return;
