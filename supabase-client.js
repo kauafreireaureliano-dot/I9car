@@ -3,10 +3,9 @@ const SUPABASE_PUBLISHABLE_KEY='sb_publishable_yRptu_ASbjlz8A0ilZWkSg_wkxDVgES';
 const supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 
 window.addEventListener('DOMContentLoaded',()=>{
-  // Remove a recriação da logo e deixa o hero limpo, focado na mensagem.
+  // Hero limpo, focado na mensagem.
   const logo=document.querySelector('.hero .logo');
   if(logo) logo.remove();
-
   const eyebrow=document.querySelector('.hero .eyebrow');
   const heroTitle=document.querySelector('.hero h1');
   const heroText=document.querySelector('.hero p');
@@ -15,6 +14,20 @@ window.addEventListener('DOMContentLoaded',()=>{
   if(heroTitle) heroTitle.innerHTML='ALGUMAS CONQUISTAS<br>NÃO CABEM EM PALAVRAS.<br><span class="orange">ELAS TÊM QUATRO RODAS.</span>';
   if(heroText) heroText.textContent='Talvez a sua próxima conquista esteja esperando por você aqui.';
   if(heroButton) heroButton.textContent='EXPLORAR VEÍCULOS ↓';
+
+  // Fechamento robusto do modal: X, clique fora e tecla ESC.
+  const modal=document.getElementById('modal');
+  const closeButton=document.querySelector('.modal .close');
+  const closeVehicle=()=>{
+    if(!modal) return;
+    modal.classList.remove('show');
+    modal.style.display='none';
+    document.body.style.overflow='';
+  };
+  window.closeCar=closeVehicle;
+  if(closeButton) closeButton.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();closeVehicle()});
+  if(modal) modal.addEventListener('click',e=>{if(e.target===modal) closeVehicle()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal?.classList.contains('show')) closeVehicle()});
 
   const button=document.getElementById('sound');
   if(!button) return;
