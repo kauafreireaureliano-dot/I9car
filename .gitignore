@@ -1,0 +1,43 @@
+# Dependências
+node_modules/
+
+# Arquivos de ambiente e segredos
+.env
+.env.local
+.env.production
+
+# Build outputs
+.next/
+dist/
+build/
+
+# Logs e temporários
+*.log
+npm-debug.log*
+yarn-error.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Relatórios e dados locais
+i9car_daily_raw.json
+build_report.py
+gerar-criativos.js
+gestor-auto.js
+anti-prejuizo.js
+buscar-carros.js
+criativos/
+
+# Claude Code settings (opcional, mas bom não versionar local)
+.claude/settings.local.json

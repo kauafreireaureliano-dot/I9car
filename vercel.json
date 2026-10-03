@@ -1,0 +1,22 @@
+{
+  "builds": [
+    {
+      "src": "i9car-painel/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/painel",
+      "dest": "/i9car-painel"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

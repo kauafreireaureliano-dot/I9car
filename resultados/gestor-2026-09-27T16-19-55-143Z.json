@@ -1,0 +1,76 @@
+{
+  "data": "2026-09-27T16:19:55.142Z",
+  "reativacao": {
+    "reativadas": [],
+    "aindaEmQuarentena": [],
+    "removidasDaQuarentena": []
+  },
+  "campanhas": {
+    "escaladas": [
+      {
+        "nome": "RECHEIOS-2-COMPRA-JESUS",
+        "antes": 42.44,
+        "depois": 50.93,
+        "roas": 2.111111,
+        "motivo": "ROAS 2.11 >= 2.0, orçamento +20% (1x hoje)"
+      }
+    ],
+    "pausadas": [],
+    "alertas": [
+      {
+        "nome": "✅NEW-RECHEIOS-Jesus",
+        "gasto": 75.78,
+        "comp": 21,
+        "roas": 1.289918,
+        "motivo": "ROAS 1.29 entre 1.0-1.5 — monitorar, não mexer"
+      }
+    ],
+    "saudaveis": [
+      {
+        "nome": "✅NEW-2- RECHEIOS-Jesus — 17/08",
+        "gasto": 0.5,
+        "comp": 0,
+        "roas": null
+      },
+      {
+        "nome": "RECHEIOS-2-COMPRA-JESUS",
+        "gasto": 33.93,
+        "comp": 15,
+        "roas": 2.111111
+      },
+      {
+        "nome": "✅compra=Recheios-[Jesus]",
+        "gasto": 1.25,
+        "comp": 1,
+        "roas": 8.712
+      }
+    ],
+    "ignoradas": []
+  },
+  "anunciosPausados": [
+    {
+      "nome": "02",
+      "campanha": "120247808842730502",
+      "gasto": 13.81,
+      "roas": 0.722665
+    },
+    {
+      "nome": "06",
+      "campanha": "120247808842730502",
+      "gasto": 16.75,
+      "roas": 0.44597
+    },
+    {
+      "nome": "04",
+      "campanha": "120247808842730502",
+      "gasto": 15.04,
+      "roas": 0.264628
+    },
+    {
+      "nome": "03",
+      "campanha": "120247437070420502",
+      "gasto": 5.92,
+      "roas": 0.336149
+    }
+  ]
+}
