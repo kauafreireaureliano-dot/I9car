@@ -1,0 +1,16 @@
+{
+  "data": "2026-09-27T15:14:26.758Z",
+  "reativacao": {
+    "reativadas": [],
+    "aindaEmQuarentena": [],
+    "removidasDaQuarentena": []
+  },
+  "campanhas": {
+    "escaladas": [],
+    "pausadas": [],
+    "alertas": [],
+    "saudaveis": [],
+    "ignoradas": []
+  },
+  "anunciosPausados": []
+}

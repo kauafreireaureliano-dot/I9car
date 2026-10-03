@@ -1,0 +1,79 @@
+{
+  "data": "2026-09-30T02:25:18.078Z",
+  "reativacao": {
+    "reativadas": [],
+    "aindaEmQuarentena": [],
+    "removidasDaQuarentena": []
+  },
+  "campanhas": {
+    "escaladas": [
+      {
+        "nome": "✅NEW-RECHEIOS-Jesus / adset 120247808842770502",
+        "antes": 2.85,
+        "depois": 3.14,
+        "roas": 1.768952,
+        "motivo": "campanha lenta (pacing 23%), bid +10%"
+      }
+    ],
+    "pausadas": [],
+    "alertas": [],
+    "saudaveis": [
+      {
+        "nome": "✅NEW-2- RECHEIOS-Jesus — 17/08",
+        "gasto": 0.32,
+        "comp": 0,
+        "roas": null
+      },
+      {
+        "nome": "✅NEW-RECHEIOS-Jesus",
+        "gasto": 118.46,
+        "comp": 47,
+        "roas": 1.768952,
+        "motivo": "ROAS 1.77 aceitável (1.5-2.0), não mexe no orçamento"
+      },
+      {
+        "nome": "RECHEIOS-2-COMPRA-JESUS",
+        "gasto": 27.67,
+        "comp": 14,
+        "roas": 4.022407,
+        "motivo": "ROAS 4.02, aguardando próximo dia para escalar"
+      },
+      {
+        "nome": "✅compra=Recheios-[Jesus]",
+        "gasto": 5.7,
+        "comp": 2,
+        "roas": 2.768421,
+        "motivo": "ROAS 2.77, aguardando próximo dia para escalar"
+      }
+    ],
+    "ignoradas": [
+      {
+        "nome": "RECHEIOS-2-COMPRA-JESUS",
+        "motivo": "ROAS 4.02 bom, mas orçamento já subiu hoje — aguarda amanhã"
+      },
+      {
+        "nome": "✅compra=Recheios-[Jesus]",
+        "motivo": "ROAS 2.77 bom, mas orçamento já subiu hoje — aguarda amanhã"
+      }
+    ]
+  },
+  "anunciosPausados": [],
+  "anunciosProtegidos": [
+    {
+      "nome": "06",
+      "campanha": "120247808842730502",
+      "gasto3d": 15.41,
+      "roas3d": 0.387411,
+      "roas30d": 2.559105,
+      "motivo": "ROAS 3d 0.39 ruim, mas ROAS 30d 2.56 bom — mantido ativo"
+    },
+    {
+      "nome": "04",
+      "campanha": "120247808842730502",
+      "gasto3d": 17.81,
+      "roas3d": 0.335205,
+      "roas30d": 2.526763,
+      "motivo": "ROAS 3d 0.34 ruim, mas ROAS 30d 2.53 bom — mantido ativo"
+    }
+  ]
+}
