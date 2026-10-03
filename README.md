@@ -1,21 +1,15 @@
-# i9 CAR — Cinematic Experience
+# I9Car Painel - Busca Automática de Veículos
 
-Experiência digital premium para a i9 CAR Multimarcas.
+Painel web para automação de busca de veículos no Facebook Marketplace.
 
-## V2
-- Tela de abertura cinematográfica
-- Barra de progresso de navegação
-- Animações acionadas pelo scroll
-- Seção sticky cinematográfica
-- Microinterações
-- Experiência sonora opcional
-- Catálogo com filtros
-- Modal de detalhes
-- CTA direto para WhatsApp
-- Layout responsivo
+## Desenvolvimento
 
-## Próximos passos
-1. Inserir veículos reais.
-2. Criar páginas individuais.
-3. Integrar painel de gerenciamento do estoque.
-4. Publicar em domínio próprio.
+```bash
+npm run dev
+```
+
+Acesse http://localhost:3000
+
+## Deploy na Vercel
+
+O deploy é automático ao fazer push para a branch main.
