@@ -1,22 +1,5 @@
 {
-"builds": [
-{
-"src": "i9car-painel/package.json",
-"use": "@vercel/next"
-},
-{
-"src": "site-principal/**/*.html",
-"use": "@vercel/static"
-}
-],
-"routes": [
-{
-"src": "/painel(/.*)?",
-"dest": "/i9car-painel$1"
-},
-{
-"src": "/(.*)",
-"dest": "/site-principal/$1"
-}
-]
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next"
 }
